@@ -17,7 +17,7 @@
 int key_start=0;
 int KeyNum=0;
 
-void aim_blobs()
+void aim_blobs()//based on blobs to adjust location
 {
 	colorchange=0;
 	static float ak=2,lastRx,lastRy;
@@ -198,7 +198,7 @@ void move_or_not_2()
 	}
 }
 
-void keystart()
+void keystart()//start control key
 {
 		while(1)
 		{

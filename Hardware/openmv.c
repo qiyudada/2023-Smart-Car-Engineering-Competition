@@ -38,32 +38,32 @@ void scan_begin(void)
 	GPIO_SetBits(GPIOC, pin_1);
 }
 
-void o_000(void)
+void o_000(void)//000物块
 {
 	GPIO_ResetBits(GPIOA, pin_1);
 	GPIO_ResetBits(GPIOA, pin_2);
 	GPIO_ResetBits(GPIOA, pin_3);
 }
 
-void o_001(void)
+void o_001(void)//001红圈
 {
 	GPIO_ResetBits(GPIOA, pin_1);
 	GPIO_ResetBits(GPIOA, pin_2);
 	GPIO_SetBits(GPIOA, pin_3);
 }
-void o_010(void)
+void o_010(void)//010绿圈
 {
 	GPIO_ResetBits(GPIOA, pin_1);
 	GPIO_SetBits(GPIOA, pin_2);
 	GPIO_ResetBits(GPIOA, pin_3);
 }
-void o_011(void)
+void o_011(void)//011蓝圈
 {
 	GPIO_ResetBits(GPIOA, pin_1);
 	GPIO_SetBits(GPIOA, pin_2);
 	GPIO_SetBits(GPIOA, pin_3);
 }
-void o_100(void)
+void o_100(void)//100扫码
 {
 	GPIO_SetBits(GPIOA, pin_1);
 	GPIO_ResetBits(GPIOA, pin_2);
@@ -87,11 +87,6 @@ void o_111(void)
 	GPIO_SetBits(GPIOA, pin_2);
 	GPIO_SetBits(GPIOA, pin_3);
 }
-//100扫码
-//000物块
-//001红圈
-//010绿圈
-//011蓝圈
 
 ////////////////////////////////////////////////////////////////
 //二维码扫描函数+发送字节给串口屏

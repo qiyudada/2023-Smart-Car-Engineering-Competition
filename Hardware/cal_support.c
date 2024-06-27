@@ -24,7 +24,7 @@ float myabs(float x) //取绝对值
 	在我们的速度控制闭环系统里面，只使用PI控制
 	pwm+=Kp[e（k）-e(k-1)]+Ki*e(k)
 **************************************************************************/
-float Kp=280,Ki=0.3;	
+float Kp=280,Ki=0.3;//PI parameter	
 int Incremental_PI (int Target,int Encoder2)
 { 	
 
@@ -103,7 +103,7 @@ void mecanumCalculate(float V_X,float V_Y,float V_Rotate,float MaxWheelSpeed,flo
 //	if(MaxWheelSpeed < MaxSpeed){
 //		Wheel_Speed[0] = Buffer[0];
 //		Wheel_Speed[1] = Buffer[1];
-//		Wheel_Speed[2] = Buffer[2];
+//		Wheel_Speed[2] = Buffer[2];s
 //		Wheel_Speed[3] = Buffer[3];
 //	}
 //	else{
