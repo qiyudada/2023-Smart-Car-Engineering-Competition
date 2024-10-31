@@ -10,6 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -335,7 +336,7 @@
               <MiscControls>--no-multibyte-chars</MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\System;.\Hardware</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\System;.\Hardware;.\System\Start</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -382,32 +383,27 @@
             <File>
               <FileName>core_cm3.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Start\core_cm3.c</FilePath>
-            </File>
-            <File>
-              <FileName>core_cm3.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Start\core_cm3.h</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Start\stm32f10x.h</FilePath>
+              <FilePath>.\System\Start\core_cm3.c</FilePath>
             </File>
             <File>
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Start\system_stm32f10x.c</FilePath>
+              <FilePath>.\System\Start\system_stm32f10x.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f10x_md.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\System\Start\startup_stm32f10x_md.s</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\System\Start\stm32f10x.h</FilePath>
             </File>
             <File>
               <FileName>system_stm32f10x.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Start\system_stm32f10x.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f10x_hd.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Start\startup_stm32f10x_hd.s</FilePath>
+              <FilePath>.\System\Start\system_stm32f10x.h</FilePath>
             </File>
           </Files>
         </Group>
